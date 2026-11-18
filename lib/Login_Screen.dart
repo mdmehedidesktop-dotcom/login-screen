@@ -45,6 +45,13 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 10,),
             MyTextField(email: TextEditingController(), hint: "Enter password", mLine: 1, icon: Icons.lock, suffixIcon: Icons.remove_red_eye),
             SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Text("Forgot password ?",style: TextStyle(color: Colors.deepOrangeAccent),)
+              ],
+            ),
+            SizedBox(height: 10,),
             Center(
               child: InkWell(
                 focusColor: Colors.grey,
@@ -73,6 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text("Register",style: TextStyle(color: Color(0XFF825CF7)),))
                 ],
               ),
+            Divider(color: Colors.black87,),
 
           ],
         ),
