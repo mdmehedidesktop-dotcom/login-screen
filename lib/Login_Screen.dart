@@ -45,6 +45,18 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 10,),
             MyTextField(email: TextEditingController(), hint: "Enter password", mLine: 1, icon: Icons.lock, suffixIcon: Icons.remove_red_eye),
             SizedBox(height: 10,),
+            Center(
+              child: Container(
+                height: 50,
+                width: 260,
+                decoration: BoxDecoration(
+                  color: Colors.orange,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                alignment: Alignment.center,
+                child: Text("Login",style: TextStyle(fontSize: 16,color: Colors.white),),
+              ),
+            )
 
 
 
