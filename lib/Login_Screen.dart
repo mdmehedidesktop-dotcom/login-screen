@@ -47,6 +47,9 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 10,),
             Center(
               child: InkWell(
+                focusColor: Colors.grey,
+                borderRadius: BorderRadius.circular(20),
+                onTap: (){},
                 child: Container(
                   height: 50,
                   width: 260,
@@ -65,7 +68,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   Text("Not Registered? ",),
                   SizedBox(width: 5,),
-                  Text("Register",style: TextStyle(color: Color(0XFF825CF7)),)
+                  InkWell(
+                      onTap: (){},
+                      child: Text("Register",style: TextStyle(color: Color(0XFF825CF7)),))
                 ],
               ),
 
